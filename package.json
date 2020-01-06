@@ -1,0 +1,16 @@
+{
+  "name": "Skylab.ES6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CaboFernando/Skylab.ES6.git",
+  "author": "Carlos <fer.1972@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7"
+  },
+  "scripts": {
+    "dev": "babel ./main.js -o ./bundle.js -w"
+  }
+}
