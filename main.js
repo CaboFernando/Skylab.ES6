@@ -89,7 +89,28 @@
 
 
 //                              Valores padrão
-const soma = (a = 3, b = 6) => a + b;
+// const soma = (a = 3, b = 6) => a + b;
 
-console.log(soma(1));
-console.log(soma());
+// console.log(soma(1));
+// console.log(soma());
+//-------------------------------------------------------------------
+
+
+//                              Desestruturação
+const usuario = {
+    nome: 'Carlera',
+    idade: 24,
+    endereco: {
+        cidade: 'Londrina',
+        estado: 'PR'
+    }
+};
+
+const {nome, idade, endereco: {cidade} }  = usuario;
+console.log(nome, idade, cidade);
+
+function mostraNome({nome}){
+    console.log(nome);
+}
+mostraNome(usuario);
+//-------------------------------------------------------------------
