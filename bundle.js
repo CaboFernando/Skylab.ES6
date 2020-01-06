@@ -62,16 +62,18 @@
 // console.log(find);
 //-------------------------------------------------------------------
 //                              Arrow Function
-var arr = [1, 3, 4, 5, 6];
-var newArr = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr);
-
-var teste = function teste() {
-  return {
-    nome: 'Carlera'
-  };
+// const arr = [1,3,4,5,6];
+// const newArr = arr.map(item => item * 2);
+// console.log(newArr);
+// const teste = () => ({nome: 'Carlera'});
+// console.log(teste());
+//-------------------------------------------------------------------
+//                              Valores padrão
+var soma = function soma() {
+  var a = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 3;
+  var b = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 6;
+  return a + b;
 };
 
-console.log(teste()); //-------------------------------------------------------------------
+console.log(soma(1));
+console.log(soma());
