@@ -43,20 +43,35 @@
 // teste(10);
 //-------------------------------------------------------------------
 //                              Operações em Arrays
-var arr = [1, 3, 4, 5, 8, 9];
-var newArr = arr.map(function (item, index) {
-  return item + index;
+// const arr = [1,3,4,5,8,9];
+// const newArr = arr.map(function(item, index) {
+//     return item + index;
+// });
+// console.log(newArr);
+// const sum = arr.reduce(function(total, next){
+//     return total + next;
+// });
+// console.log(sum);
+// const filter = arr.filter(function(item){
+//     return item % 2 === 0;
+// });
+// console.log(filter);
+// const find = arr.find(function(item){
+//     return item === 2;
+// });
+// console.log(find);
+//-------------------------------------------------------------------
+//                              Arrow Function
+var arr = [1, 3, 4, 5, 6];
+var newArr = arr.map(function (item) {
+  return item * 2;
 });
 console.log(newArr);
-var sum = arr.reduce(function (total, next) {
-  return total + next;
-});
-console.log(sum);
-var filter = arr.filter(function (item) {
-  return item % 2 === 0;
-});
-console.log(filter);
-var find = arr.find(function (item) {
-  return item === 2;
-});
-console.log(find); //-------------------------------------------------------------------
+
+var teste = function teste() {
+  return {
+    nome: 'Carlera'
+  };
+};
+
+console.log(teste()); //-------------------------------------------------------------------
