@@ -118,41 +118,48 @@
 
 //                              Operadores rest/spread
 //Rest Operator
-const usuario = {
-    nome: 'Carlera',
-    idade: 24,
-    empresa: 'Advise'
-};
-const {nome, ...resto} = usuario;
+// const usuario = {
+//     nome: 'Carlera',
+//     idade: 24,
+//     empresa: 'Advise'
+// };
+// const {nome, ...resto} = usuario;
 // console.log(nome);
 // console.log(resto);
 
-const arr = [1,2,3,4];
-const [a,b, ...c] = arr;
+// const arr = [1,2,3,4];
+// const [a,b, ...c] = arr;
 // console.log(a);
 // console.log(b);
 // console.log(c);
 
-function soma(a,b, ...params) {
-    //return params.reduce((total, next) => total + next);
-    return params;
-};
-//console.log(soma(1,3,4));
+// function soma(a,b, ...params) {
+//     return params.reduce((total, next) => total + next);
+//     return params;
+// };
+// console.log(soma(1,3,4));
 
-//Spread Operator
-const arr1 = [1,2,3];
-const arr2 = [4,5,6];
-const arr3 = [...arr1, ...arr2];
+// Spread Operator
+// const arr1 = [1,2,3];
+// const arr2 = [4,5,6];
+// const arr3 = [...arr1, ...arr2];
 
-//console.log(arr3);
+// console.log(arr3);
 
-const usuario1 = {
-    nome: 'Carlera',
-    idade: 23,
-    empresa: 'Advise'
-};
-const usuario2 = { ...usuario1, nome: 'Macaquera'};
+// const usuario1 = {
+//     nome: 'Carlera',
+//     idade: 23,
+//     empresa: 'Advise'
+// };
+// const usuario2 = { ...usuario1, nome: 'Macaquera'};
 
-//console.log(usuario2);
+// console.log(usuario2);
 //-------------------------------------------------------------------
 
+
+//                              Template Literals
+const nome = 'Carlera';
+const idade = 24;
+
+//console.log('Meu nome é ' + nome + ' e tenho ' + idade + ' anos');
+console.log(`Meu nome é ${nome} e tenho ${idade} anos`);
