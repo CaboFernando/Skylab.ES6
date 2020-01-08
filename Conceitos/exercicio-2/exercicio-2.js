@@ -6,4 +6,8 @@ const usuarios = [
 
 //2.1
 let idades = usuarios.map(item => item.idade);
-console.log(idades);
+//console.log(idades);
+
+//2.2
+let colaboradores = usuarios.filter(item => item.empresa === 'Rocketseat' && item.idade > 18)
+console.log(colaboradores);

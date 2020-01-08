@@ -16,5 +16,10 @@ var usuarios = [{
 
 var idades = usuarios.map(function (item) {
   return item.idade;
+}); //console.log(idades);
+//2.2
+
+var colaboradores = usuarios.filter(function (item) {
+  return item.empresa === 'Rocketseat' && item.idade > 18;
 });
-console.log(idades);
+console.log(colaboradores);
