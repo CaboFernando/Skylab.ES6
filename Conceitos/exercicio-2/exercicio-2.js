@@ -14,4 +14,16 @@ let colaboradores = usuarios.filter(item => item.empresa === 'Rocketseat' && ite
 
 //2.3
 let googlers = usuarios.find(item => item.empresa === 'Google');
-console.log(googlers);
+//console.log(googlers);
+
+//2.4
+let idadesx2 = usuarios.map(function(item, index){
+    return  {
+                nome: item.nome, 
+                idade: item.idade * 2, 
+                empresa: item.empresa
+            };
+});
+
+let menorQue50 = idadesx2.filter(item => item.idade <= 50);
+console.log(menorQue50);

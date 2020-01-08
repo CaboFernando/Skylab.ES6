@@ -26,5 +26,17 @@ var colaboradores = usuarios.filter(function (item) {
 
 var googlers = usuarios.find(function (item) {
   return item.empresa === 'Google';
+}); //console.log(googlers);
+//2.4
+
+var idadesx2 = usuarios.map(function (item, index) {
+  return {
+    nome: item.nome,
+    idade: item.idade * 2,
+    empresa: item.empresa
+  };
 });
-console.log(googlers);
+var menorQue50 = idadesx2.filter(function (item) {
+  return item.idade <= 50;
+});
+console.log(menorQue50);
