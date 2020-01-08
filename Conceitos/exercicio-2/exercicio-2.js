@@ -10,4 +10,8 @@ let idades = usuarios.map(item => item.idade);
 
 //2.2
 let colaboradores = usuarios.filter(item => item.empresa === 'Rocketseat' && item.idade > 18)
-console.log(colaboradores);
+//console.log(colaboradores);
+
+//2.3
+let googlers = usuarios.find(item => item.empresa === 'Google');
+console.log(googlers);
