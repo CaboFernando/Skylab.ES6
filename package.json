@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dev": "babel ./Conceitos/main.js -o ./Conceitos/bundle.js -w",
-    "ex1": "babel ./Conceitos/exercicio-1/exercicio-1.js -o ./Conceitos/exercicio-1/bundle.js -w"
+    "ex1": "babel ./Conceitos/exercicio-1/exercicio-1.js -o ./Conceitos/exercicio-1/bundle.js -w",
+    "ex2": "babel ./Conceitos/exercicio-2/exercicio-2.js -o ./Conceitos/exercicio-2/bundle.js -w"
   }
 }
