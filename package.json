@@ -15,6 +15,7 @@
     "dev": "babel ./Conceitos/main.js -o ./Conceitos/bundle.js -w",
     "ex1": "babel ./Conceitos/exercicio-1/exercicio-1.js -o ./Conceitos/exercicio-1/bundle.js -w",
     "ex2": "babel ./Conceitos/exercicio-2/exercicio-2.js -o ./Conceitos/exercicio-2/bundle.js -w",
-    "ex3": "babel ./Conceitos/exercicio-3/exercicio-3.js -o ./Conceitos/exercicio-3/bundle.js -w"
+    "ex3": "babel ./Conceitos/exercicio-3/exercicio-3.js -o ./Conceitos/exercicio-3/bundle.js -w",
+    "ex4": "babel ./Conceitos/exercicio-4/exercicio-4.js -o ./Conceitos/exercicio-4/bundle.js -w"
   }
 }
