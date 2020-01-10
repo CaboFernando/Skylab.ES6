@@ -1,8 +1,8 @@
 module.exports = {
-    entry: './2-Webpack Server/main.js',
+    entry: './2-Webpack-Server/main.js',
     output: {
         path: __dirname,
-        filename: './2-Webpack Server/bundle.js'
+        filename: './2-Webpack-Server/bundle.js'
     },
     module: {
         rules: [
