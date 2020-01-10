@@ -90,11 +90,11 @@
 /*!*********************************!*\
   !*** ./2-Webpack Server/fun.js ***!
   \*********************************/
-/*! exports provided: soma */
+/*! exports provided: soma, sub, div */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\nfunction soma(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./2-Webpack_Server/fun.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"soma\", function() { return soma; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"sub\", function() { return sub; });\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"div\", function() { return div; });\nfunction soma(a, b) {\n  return a + b;\n}\n;\nfunction sub(a, b) {\n  return a - b;\n}\n;\nfunction div(a, b) {\n  return a / b;\n}\n;\n\n//# sourceURL=webpack:///./2-Webpack_Server/fun.js?");
 
 /***/ }),
 
@@ -106,7 +106,19 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fun */ \"./2-Webpack Server/fun.js\");\n\nconsole.log(Object(_fun__WEBPACK_IMPORTED_MODULE_0__[\"soma\"])(1, 2));\n\n//# sourceURL=webpack:///./2-Webpack_Server/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./fun */ \"./2-Webpack Server/fun.js\");\n/* harmony import */ var _soma__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./soma */ \"./2-Webpack Server/soma.js\");\n\n\n\nconsole.log(Object(_soma__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(4, 2));\nconsole.log(_fun__WEBPACK_IMPORTED_MODULE_0__[\"div\"](10, 2));\nconsole.log(_fun__WEBPACK_IMPORTED_MODULE_0__[\"sub\"](4, 2));\n\n//# sourceURL=webpack:///./2-Webpack_Server/main.js?");
+
+/***/ }),
+
+/***/ "./2-Webpack Server/soma.js":
+/*!**********************************!*\
+  !*** ./2-Webpack Server/soma.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return soma; });\nfunction soma(a, b) {\n  return a + b;\n}\n\n//# sourceURL=webpack:///./2-Webpack_Server/soma.js?");
 
 /***/ })
 

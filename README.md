@@ -1,10 +1,20 @@
 # Skylab.ES6
 
 ## Módulo 1 - Conceitos
-####    - Webpack
+####    - Introdução
+####    - Instalando Node & Yarn
+####    - Configuranod Babel
 ####    - Classes
-####    - Arrow functions
+####    - Const & Let
+####    - Operações Array
+####    - Arrow Functions
+####    - Valor Padrão
 ####    - Desestruturação
-####    - Rest/spread
+####    - Operadores rest/spread
+####    - Template Literals
+####    - Object Short Syntax
+
+## Módulo 2 - Webpack
+####    - Configurando Webpack
 ####    - Import/export
-####    - Async/await
+####    - Webpack dev server
